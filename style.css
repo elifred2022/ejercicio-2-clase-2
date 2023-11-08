@@ -1,0 +1,118 @@
+:root {
+    /* colores*/
+    --orange: #F7931A; /*variable*/
+    --soft-orange: #FFe9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #fff;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--warm-black);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+   
+}
+
+.calculadora {
+    width: 314px;
+    height: auto;
+    background-color: var(--grey);
+    padding: 27px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(232, 228, 228, 0.1);
+    text-align: center;
+    display:inline-block;
+    
+
+}
+
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+button {
+    width: 80px;
+    height: 50px;
+    font-size: 15px;
+    margin: 5px;
+    background-color: var(--secondary-blue);
+    /*transition: background-color 0.3s;
+    /* Agrega una transición de color de fondo */
+    border-radius: 20%;
+    font-family: Arial, sans-serif;
+    color: #fafafa;
+    text-align: center;
+    padding: 19px;
+    text-decoration: none;
+}
+
+.botonera {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: -38px;
+    padding: 15px;
+}
+
+#resultado {
+    background-color: #fff;
+    color: #000;
+    font-size: 24px;
+    padding: 5px;
+    margin: 1vh;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+@media screen and (max-width: 300px) {
+  
+    body {
+        
+        display:block;
+      
+       
+    }
+
+    .calculadora {
+        width: 200x;
+        height: 500px;
+        background-color: var(--grey);
+        padding: 27px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(232, 228, 228, 0.1);
+        text-align: center;
+        display:inline-block;
+        
+    
+    }
+
+    .botonera {
+        width: 80px;
+        height: 50px;
+        display:block;
+        align-items: center;
+        margin-left: -38px;
+        padding: 15px;
+    }
+  }
